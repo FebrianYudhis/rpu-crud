@@ -5,6 +5,7 @@ if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
 } else if (isset($_SESSION['username']) and isset($_SESSION['status']) and $_SESSION['hak'] != "Admin") {
     echo "<script>alert('Anda Bukan Admin !');window.location='http://localhost/crud/index.php';</script>";
 }
+include('../../php/koneksi.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,6 +25,7 @@ if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../../plugins/DataTables/datatables.css" />
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

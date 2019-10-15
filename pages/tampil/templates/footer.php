@@ -23,7 +23,12 @@
 <script src="http://localhost/crud/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="http://localhost/crud/dist/js/demo.js"></script>
-<script src="ajax/<?= $data['ajax']; ?>.js"></script>
+<script type="text/javascript" src="../../plugins/DataTables/datatables.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#datatabel').DataTable();
+    });
+</script>
 </body>
 
 </html>
