@@ -1,6 +1,5 @@
 <?php $data['judul'] = "Edit Data Nilai";
 $data['base'] = "../nilai.php";
-$data['ajax'] = "nilai";
 include('templates/header.php'); ?>
 
 <!-- Main content -->

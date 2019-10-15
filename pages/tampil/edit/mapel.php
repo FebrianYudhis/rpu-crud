@@ -1,6 +1,5 @@
 <?php $data['judul'] = "Edit Data Mapel";
 $data['base'] = "../mapel.php";
-$data['ajax'] = "mapel";
 include('templates/header.php'); ?>
 <!-- Main content -->
 <?php

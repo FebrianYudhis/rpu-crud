@@ -1,6 +1,5 @@
 <?php $data['judul'] = "Edit Data Guru";
-$data['base'] = "../guru.php";
-$data['ajax'] = "guru";
+$data['base'] = "../siswa.php";
 include('templates/header.php'); ?>
 
 <!-- Main content -->

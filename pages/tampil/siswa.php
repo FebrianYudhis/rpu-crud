@@ -1,5 +1,4 @@
 <?php $data['judul'] = "Data Siswa";
-$data['ajax'] = "siswa";
 include('templates/header.php');
 $sql = mysqli_query($koneksi, "SELECT * FROM siswa");
 ?>
@@ -36,7 +35,9 @@ $sql = mysqli_query($koneksi, "SELECT * FROM siswa");
                         <td><?= $siswa['kelas']; ?></td>
                         <td><?= $j['nama_jurusan']; ?></td>
                         <td><img src="../../assets/img/profil/<?= $siswa['gambar']; ?>" alt="Tidak Ada Gambar" class="img-thumbnail"></td>
-                        <td></td>
+                        <td>
+                            <a class="btn btn-info" href="edit/siswa.php?nis=<?= $siswa['nis']; ?>">Edit</a>
+                            <a class="btn btn-danger" href="hapus/siswa.php?nis=<?= $siswa['nis']; ?>">Hapus</a></td>
                     </tr>
                 <?php } ?>
             </tbody>
