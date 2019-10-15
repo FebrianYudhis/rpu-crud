@@ -27,7 +27,10 @@ $sql = mysqli_query($koneksi, "SELECT * FROM nilai"); ?>
                         <td><?= $n['nama']; ?></td>
                         <td><?= $m['mapel']; ?></td>
                         <td><?= $nilai['nilai']; ?></td>
-                        <td></td>
+                        <td>
+                            <a class="btn btn-info" href="edit/nilai.php?kode=<?= $nilai['kode_penilaian']; ?>">Edit</a>
+                            <a class="btn btn-danger" href="hapus/nilai.php?kode=<?= $nilai['kode_penilaian']; ?>">Hapus</a>
+                        </td>
                     </tr>
                 <?php } ?>
             </tbody>

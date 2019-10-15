@@ -37,7 +37,8 @@ $sql = mysqli_query($koneksi, "SELECT * FROM siswa");
                         <td><img src="../../assets/img/profil/<?= $siswa['gambar']; ?>" alt="Tidak Ada Gambar" class="img-thumbnail"></td>
                         <td>
                             <a class="btn btn-info" href="edit/siswa.php?nis=<?= $siswa['nis']; ?>">Edit</a>
-                            <a class="btn btn-danger" href="hapus/siswa.php?nis=<?= $siswa['nis']; ?>">Hapus</a></td>
+                            <a class="btn btn-danger" href="hapus/siswa.php?nis=<?= $siswa['nis']; ?>">Hapus</a>
+                        </td>
                     </tr>
                 <?php } ?>
             </tbody>
