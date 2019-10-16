@@ -16,13 +16,13 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="http://localhost/crud/plugins/jquery/jquery.min.js"></script>
+<script src="<?= $base; ?>crud/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="http://localhost/crud/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= $base; ?>crud/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="http://localhost/crud/dist/js/adminlte.min.js"></script>
+<script src="<?= $base; ?>crud/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="http://localhost/crud/dist/js/demo.js"></script>
+<script src="<?= $base; ?>crud/dist/js/demo.js"></script>
 </body>
 
 </html>
