@@ -14,6 +14,7 @@ if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?= $data['judul']; ?></title>
+    <link rel="shortcut icon" href="../../../assets/img/logo/favicon.jpg">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->

@@ -9,6 +9,7 @@ if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
 
 <head>
     <title><?= $data['judul']; ?></title>
+    <link rel="shortcut icon" href="../../../assets/img/logo/favicon.jpg">
     <meta charset="UTF-8">
     <meta name="description" content="Arcade - Architecture Template">
     <meta name="keywords" content="arcade, architecture, onepage, creative, html">

@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
 	<!-- Stylesheets -->
+	<link rel="shortcut icon" href="assets/img/logo/favicon.jpg">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="assets/css/animate.css" />
