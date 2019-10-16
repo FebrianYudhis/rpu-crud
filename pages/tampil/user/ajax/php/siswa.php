@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect('localhost', 'root', '', 'tugas');
+include('../../../../../php/koneksi.php');
 $perhalaman = 5;
 $cari = mysqli_query($koneksi, "SELECT * FROM siswa");
 $semuadata = mysqli_num_rows($cari);
