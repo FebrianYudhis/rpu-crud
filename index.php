@@ -206,7 +206,7 @@
 				<div id="client-carousel" class="client-slider">
 					<div class="single-brand">
 						<a href="#">
-							<img src="assets/img/logo/pn.png" alt="">Putra Nugraha
+							<img src="assets/img/partner/putra.png" alt="">Putra Nugraha
 						</a>
 					</div>
 				</div>
