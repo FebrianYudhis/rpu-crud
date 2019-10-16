@@ -1,7 +1,8 @@
 <?php
 session_start();
+$base = "http://localhost/";
 if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
-    echo "<script>alert('Harap Login Dulu !');window.location='http://localhost/crud/index.php';</script>";
+    echo "<script>alert('Harap Login Dulu !');window.location='" . $base . "crud/index.php';</script>";
 } ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,17 +1,18 @@
 <?php
 session_start();
+$base = "http://localhost/";
 $menu = $_GET['menu'];
 if (isset($_SESSION['username']) and isset($_SESSION['status']) and $_SESSION['hak'] == "Admin") {
   if ($menu == "admin") {
-    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='http://localhost/crud/pages/tampil/utama.php';</script>";
+    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='" . $base . "crud/pages/tampil/utama.php';</script>";
   } else {
-    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='http://localhost/crud/pages/tampil/user/" . $menu . ".php';</script>";
+    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='" . $base . "crud/pages/tampil/user/" . $menu . ".php';</script>";
   }
 } else if (isset($_SESSION['username']) and isset($_SESSION['status'])) {
   if ($menu == "admin") {
-    echo "<script>alert('Anda Bukan Admin,Keluar Dari User Dan Login Sebagai Admin !');window.location='http://localhost/crud/';</script>";
+    echo "<script>alert('Anda Bukan Admin,Keluar Dari User Dan Login Sebagai Admin !');window.location='" . $base . "crud/';</script>";
   } else {
-    echo "<script>alert('Anda Sudah Login Sebagai User !');window.location='http://localhost/crud/pages/tampil/user/" . $menu . ".php';</script>";
+    echo "<script>alert('Anda Sudah Login Sebagai User !');window.location='" . $base . "crud/pages/tampil/user/" . $menu . ".php';</script>";
   }
 }
 ?>
