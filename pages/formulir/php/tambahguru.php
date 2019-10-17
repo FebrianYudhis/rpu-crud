@@ -15,9 +15,7 @@ if ($_FILES['file']['name']) {
     $file_tmp = $_FILES['file']['tmp_name'];
     if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {
         if ($ukuran < 2048000) {
-            var_dump(move_uploaded_file($file_tmp, '../../../assets/img/profil/' . $nama));
-            var_dump($file_tmp);
-            die;
+            move_uploaded_file($file_tmp, '../../../assets/img/profil/' . $nama);
             $tambah = "INSERT INTO guru VALUES('$a','$b','$c','$f','$d','$e','$nama')";
             $sql = mysqli_query($koneksi, $tambah);
             if ($sql) {
