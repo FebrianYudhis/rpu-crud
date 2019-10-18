@@ -23,7 +23,7 @@ $sql = mysqli_query($koneksi, "SELECT * FROM siswa");
             <tbody>
                 <?php while ($siswa = mysqli_fetch_array($sql)) {
                     $a = $siswa['kode_jurusan'];
-                    $jurusan = mysqli_query($koneksi, "SELECT * FROM JURUSAN WHERE kode_jurusan=$a");
+                    $jurusan = mysqli_query($koneksi, "SELECT * FROM jurusan WHERE kode_jurusan=$a");
                     $j = mysqli_fetch_array($jurusan); ?>
                     <tr>
                         <td><?= $siswa['nis']; ?></td>
