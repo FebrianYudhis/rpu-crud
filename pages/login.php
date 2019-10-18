@@ -1,6 +1,6 @@
 <?php
 session_start();
-$base = "http://localhost/";
+$base = "http://killersvteam.com/";
 $menu = $_GET['menu'];
 if (isset($_SESSION['username']) and isset($_SESSION['status']) and $_SESSION['hak'] == "Admin") {
   if ($menu == "admin") {
