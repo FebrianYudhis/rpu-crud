@@ -4,15 +4,15 @@ $base = "http://killersvteam.com/";
 $menu = $_GET['menu'];
 if (isset($_SESSION['username']) and isset($_SESSION['status']) and $_SESSION['hak'] == "Admin") {
   if ($menu == "admin") {
-    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='" . $base . "crud/pages/tampil/utama.php';</script>";
+    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='" . $base . "pages/tampil/utama.php';</script>";
   } else {
-    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='" . $base . "crud/pages/tampil/user/" . $menu . ".php';</script>";
+    echo "<script>alert('Anda Sudah Login Sebagai Admin !');window.location='" . $base . "pages/tampil/user/" . $menu . ".php';</script>";
   }
 } else if (isset($_SESSION['username']) and isset($_SESSION['status'])) {
   if ($menu == "admin") {
-    echo "<script>alert('Anda Bukan Admin,Keluar Dari User Dan Login Sebagai Admin !');window.location='" . $base . "crud/';</script>";
+    echo "<script>alert('Anda Bukan Admin,Keluar Dari User Dan Login Sebagai Admin !');window.location='" . $base . "';</script>";
   } else {
-    echo "<script>alert('Anda Sudah Login Sebagai User !');window.location='" . $base . "crud/pages/tampil/user/" . $menu . ".php';</script>";
+    echo "<script>alert('Anda Sudah Login Sebagai User !');window.location='" . $base . "pages/tampil/user/" . $menu . ".php';</script>";
   }
 }
 ?>

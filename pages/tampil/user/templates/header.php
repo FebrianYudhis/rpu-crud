@@ -2,8 +2,10 @@
 session_start();
 $base = "http://killersvteam.com/";
 if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
-    echo "<script>alert('Harap Login Dulu !');window.location='" . $base . "crud/index.php';</script>";
-} ?>
+    echo "<script>alert('Harap Login Dulu !');window.location='" . $base . "index.php';</script>";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

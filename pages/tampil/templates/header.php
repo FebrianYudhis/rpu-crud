@@ -2,9 +2,9 @@
 session_start();
 $base = "http://killersvteam.com/";
 if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
-    echo "<script>alert('Harap Login Dulu !');window.location='" . $base . "crud/index.php';</script>";
+    echo "<script>alert('Harap Login Dulu !');window.location='" . $base . "index.php';</script>";
 } else if (isset($_SESSION['username']) and isset($_SESSION['status']) and $_SESSION['hak'] != "Admin") {
-    echo "<script>alert('Anda Bukan Admin !');window.location='" . $base . "crud/index.php';</script>";
+    echo "<script>alert('Anda Bukan Admin !');window.location='" . $base . "index.php';</script>";
 }
 include('../../php/koneksi.php');
 ?>
@@ -19,11 +19,11 @@ include('../../php/koneksi.php');
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?= $base; ?>crud/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= $base; ?>/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="<?= $base; ?>crud/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="<?= $base; ?>/dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -54,23 +54,23 @@ include('../../php/koneksi.php');
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <span class="dropdown-item dropdown-header">Tampilkan Data</span>
                         <div class="dropdown-divider"></div>
-                        <a href="<?= $base; ?>crud/pages/tampil/siswa.php" class="dropdown-item">
+                        <a href="<?= $base; ?>/pages/tampil/siswa.php" class="dropdown-item">
                             <i class="fas fa-fw fa-child mr-2"></i> Data Siswa
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="<?= $base; ?>crud/pages/tampil/nilai.php" class="dropdown-item">
+                        <a href="<?= $base; ?>/pages/tampil/nilai.php" class="dropdown-item">
                             <i class="fas fa-fw fa-list-ol mr-2"></i> Data Nilai
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="<?= $base; ?>crud/pages/tampil/guru.php" class="dropdown-item">
+                        <a href="<?= $base; ?>/pages/tampil/guru.php" class="dropdown-item">
                             <i class="fas fa-fw fa-chalkboard-teacher mr-2"></i> Data Guru
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="<?= $base; ?>crud/pages/tampil/mapel.php" class="dropdown-item">
+                        <a href="<?= $base; ?>/pages/tampil/mapel.php" class="dropdown-item">
                             <i class="fas fa-fw fa-book mr-2"></i> Data Mapel
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="<?= $base; ?>crud/pages/tampil/jurusan.php" class="dropdown-item">
+                        <a href="<?= $base; ?>/pages/tampil/jurusan.php" class="dropdown-item">
                             <i class="fas fa-fw fa-code-branch mr-2"></i> Data Jurusan
                         </a>
                         <div class="dropdown-divider"></div>

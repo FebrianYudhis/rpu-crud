@@ -118,7 +118,7 @@
 			<div class="row">
 				<?php
 				include('php/koneksi.php');
-				$jurusan = mysqli_query($koneksi, "SELECT * FROM JURUSAN");
+				$jurusan = mysqli_query($koneksi, "SELECT * FROM jurusan");
 				foreach ($jurusan as $j) { ?>
 					<div class="col-lg-4 col-md-6">
 						<div class="service-box">

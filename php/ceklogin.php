@@ -4,8 +4,8 @@ include("koneksi.php");
 $menu = $_POST['menu'];
 $username = $_POST['username'];
 $password = $_POST['password'];
-$data = mysqli_query($koneksi, "select * from akun where username='$username' and password='$password'");
-$status = mysqli_query($koneksi, "SELECT * FROM AKUN where username = '$username'");
+$data = mysqli_query($koneksi, "SELECT * FROM akun where username='$username' and password='$password'");
+$status = mysqli_query($koneksi, "SELECT * FROM akun where username = '$username'");
 $liatstatus = mysqli_fetch_array($status);
 $cek = mysqli_num_rows($data);
 if ($cek > 0) {
