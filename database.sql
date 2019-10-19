@@ -164,7 +164,7 @@ INSERT INTO `siswa` (`nis`, `nama`, `jenis_kelamin`, `tempat_lahir`, `tanggal_la
 (13540, 'Reka Gilang Syahputra', 'laki-laki', 'Cempaga Mulia', '2002-07-16', 'Jl.Cempaga', '12', 1, 'reka.JPG'),
 (13543, 'Rogas Pandinoan', 'perempuan', 'Palangkaraya', '2001-08-26', 'Jl.Tidar', '12', 1, 'rogas.JPG'),
 (13548, 'Usup', 'laki-laki', 'Pelangsian', '2001-04-11', 'Jl.H.M Arsyad', '12', 1, 'usup.jpg'),
-(13549, 'Rahmad Abadi', 'laki-laki', 'Sampit', '2002-05-22', 'Jl.Muchran Ali', '12', 1, 'amat.JPG');
+(13549, 'Rahmad Abadi', 'laki-laki', 'Sampit', '2002-05-22', 'Jl.Muchran Ali', '12', 1, 'amat.jpg');
 
 --
 -- Indexes for dumped tables
