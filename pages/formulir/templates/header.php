@@ -1,6 +1,6 @@
 <?php
 session_start();
-$base = "http://killersvteam.com/";
+$base = "http://localhost/";
 if (!isset($_SESSION['username']) and !isset($_SESSION['status'])) {
     echo "<script>alert('Harap Login Dulu !');window.location='" . $base . "index.php';</script>";
 } else if (isset($_SESSION['username']) and isset($_SESSION['status']) and $_SESSION['hak'] != "Admin") {

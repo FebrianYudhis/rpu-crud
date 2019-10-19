@@ -1,6 +1,6 @@
 <?php
 session_start();
-$base = "http://killersvteam.com/";
+$base = "http://localhost/";
 $_SESSION['username'] = '';
 $_SESSION['status'] = '';
 unset($_SESSION['username']);
